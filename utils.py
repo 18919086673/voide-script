@@ -5,8 +5,8 @@ from langchain_community.utilities import WikipediaAPIWrapper
 import os
 
 # 通过key从环境变量中读取api_key
-openai_api_key = os.getenv("OPENAI_API_KEY")
-print("openai_api_key=", openai_api_key)
+#openai_api_key = os.getenv("OPENAI_API_KEY")
+#print("openai_api_key=", openai_api_key)
 
 
 def generate_script(subject, video_length, creativity, api_key):
@@ -54,4 +54,4 @@ def generate_script(subject, video_length, creativity, api_key):
     return search_relult, title, script
 
 
-print(generate_script("光辉岁月", 1, 0.7, os.getenv("OPENAI_API_KEY")))
+#print(generate_script("光辉岁月", 1, 0.7, os.getenv("OPENAI_API_KEY")))
